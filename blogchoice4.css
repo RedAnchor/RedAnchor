@@ -1,0 +1,161 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1.4;
+	color: #1d1d1d;
+	background-color: #1d1d1d;
+}
+
+.container-search {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 1.2rem;
+}
+
+/*---------header----------*/
+header {
+	min-height: 60vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images_blogs/pic4.jpg) center/cover no-repeat fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+.banner {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #ececec;
+}
+
+.banner-title {
+	font-size: 3rem;
+	font-family: poppins;
+}
+
+.banner p {
+	padding: 1rem 0 2rem 0;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	font-family: poppins;
+	font-weight: 300;
+	word-spacing: 2px;
+}
+
+.banner form {
+	background-color: #ececec;
+	border-radius: 20px;
+	padding: 0.6rem 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-input {
+	background-color: #ececec;
+	font-family: poppins;
+	font-size: 1.1rem;
+	width: 100%;
+	outline: 0;
+	padding: 0.6rem 0;
+	border: none;
+}
+
+.search-input::placeholder {
+	text-transform: capitalize;
+}
+
+.search-button {
+	width: 40px;
+	font-size: 1.1rem;
+	color: #b50717;
+	border: none;
+	background: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+/*---------blog----------*/
+#blog {
+	justify-content: center;
+	align-items: center;
+    margin: 20px 80px;
+	padding: 100px;
+}
+
+.blog-text {
+	color: #ececec;
+	font-size: 1.2rem;
+    font-weight: 300;
+	word-spacing: 2px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/*---------footer----------*/
+footer {
+	background: #1d1d1d;
+	color: #ececec;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.3rem;
+}
+
+.social-links a {
+	border: 2px solid #ececec;
+	color: #ececec;
+	display: block;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	text-decoration: none;
+	margin: 0 0.3rem;
+	transition: all 0.7s ease;
+}
+
+.social-links a:hover {
+	background: #ececec;
+	color: #1d1d1d;
+}
+
+.footer span {
+	margin-top: 1rem;
+	display: block;
+	font-family: poppins;
+	letter-spacing: 2px;
+}
+
+/*---------queries---------*/
+@media(max-width:1250px) {
+	.blog-text {
+		width: 900px;
+	}
+}
+
+@media(max-width:1100px) {
+	.blog-text {
+		margin: 20px 10px;
+		width: 100%;
+	}
+	#blog {
+		padding: 20px;
+	}
+}
